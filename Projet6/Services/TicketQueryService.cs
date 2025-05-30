@@ -75,7 +75,7 @@ namespace Projet6.Services
             }
 
             // Filtre par période
-            if (startDate.HasValue || endDate.HasValue)
+            if (startDate.HasValue && endDate.HasValue)
             {
                 if (useDateResolution)
                 {
@@ -89,9 +89,8 @@ namespace Projet6.Services
                 {
                     // Utiliser DateCreation par défaut
                     if (startDate.HasValue)
-                        query = query.Where(t => t.DateCreation >= startDate.Value);
-                    if (endDate.HasValue)
-                        query = query.Where(t => t.DateCreation <= endDate.Value);
+                        query = query.Where(t => t.DateCreation >= startDate.Value && t.DateCreation <= endDate.Value);
+
                 }
             }
 
@@ -102,8 +101,7 @@ namespace Projet6.Services
                 {
                     var lowerKeyword = keyword.Trim().ToLower();
                     query = query.Where(t => 
-                        EF.Functions.Like(t.Description.ToLower(), $"%{lowerKeyword}%") ||
-                        (t.Resolution != null && EF.Functions.Like(t.Resolution.ToLower(), $"%{lowerKeyword}%")));
+                        EF.Functions.Like(t.Description.ToLower(), $"%{lowerKeyword}%"));
                 }
             }
 

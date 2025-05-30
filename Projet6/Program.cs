@@ -360,7 +360,7 @@ namespace Projet6
 
             for (int i = 0; i < products.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. {products[i].ProductName}");
+                Console.WriteLine($"{i + 1}. {products[i].ProductName} : id {products[i].ProductId}");
             }
             Console.WriteLine($"{products.Count+1}. Tous");
 
@@ -387,7 +387,7 @@ namespace Projet6
 
             for (int i = 0; i < versions.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. {versions[i].VersionName}");
+                Console.WriteLine($"{i + 1}. {versions[i].VersionName} : id: {versions[i].VersionId}");
             }
             Console.WriteLine($"{versions.Count + 1}. Tous");
             Console.Write("\nChoisissez une version (numéro) : ");
@@ -408,7 +408,7 @@ namespace Projet6
         {
             Console.WriteLine("\n📱 Sélection du statut :");
             Console.WriteLine("1: En cours");
-            Console.WriteLine("2: Résolus");
+            Console.WriteLine("2: Résolu");
             Console.WriteLine("3: Les deux");
             Console.Write("\nChoisissez un statut : ");
             if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 1 && choice <= 3)
@@ -418,7 +418,7 @@ namespace Projet6
                     case 1:
                         return "En cours";
                     case 2:
-                        return "Résolus";
+                        return "Résolu";
                     case 3:
                         return null;
                     default:
