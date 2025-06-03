@@ -75,13 +75,13 @@ namespace Projet6
             // Liste des chaînes de connexion par ordre de priorité
             var connectionStrings = new[]
             {
-                // 1. LocalDB (par défaut)
-                "Server=(localdb)\\mssqllocaldb;Database=NexaWorksConsole;Trusted_Connection=true;MultipleActiveResultSets=true;",
+                 //1. LocalDB (par défaut)
+                //"Server=(localdb)\\mssqllocaldb;Database=NexaWorksConsole;Trusted_Connection=true;MultipleActiveResultSets=true;",
                 
                 // 2. SQL Server Express local
-                "Server=.\\SQLEXPRESS;Database=NexaWorksConsole;Trusted_Connection=true;MultipleActiveResultSets=true;TrustServerCertificate=true;",
+                //"Server=.\\SQLEXPRESS;Database=NexaWorksConsole;Trusted_Connection=true;MultipleActiveResultSets=true;TrustServerCertificate=true;",
                 
-                // 3. SQL Server local
+                //// 3. SQL Server local
                 "Server=.;Database=NexaWorksConsole;Trusted_Connection=true;MultipleActiveResultSets=true;TrustServerCertificate=true;",
                 
                 // 4. Configuration personnalisée

@@ -231,7 +231,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 3, 3),
                     DateResolution = null,
                     Description = "L'application se ferme brutalement lors de la tentative d'importation des activités depuis des montres connectées Garmin sur les appareils iOS 17.4 et supérieurs. Les utilisateurs ne peuvent pas intégrer leurs données d'entraînement existantes.",
-                    Resolution = "Actuellement en investigation. L'analyse préliminaire suggère un conflit avec la nouvelle politique de sécurité iOS concernant les connexions Bluetooth. L'équipe travaille sur une solution qui maintient la compatibilité tout en respectant les nouvelles restrictions d'Apple.",
                     ProductId = 3, // Planificateur d'Entraînement
                     VersionId = 2, // 1.1
                     OsId = 5,      // iOS
@@ -259,7 +258,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 4, 5),
                     DateResolution = null,
                     Description = "Fuite de mémoire critique identifiée lors de l'utilisation prolongée. L'application peut consommer jusqu'à 8 Go de RAM après quelques heures d'utilisation, ralentissant considérablement le système.",
-                    Resolution = "Analyse en cours avec des outils de profilage mémoire. Plusieurs sources potentielles identifiées dans le gestionnaire de modèles 3D pour la visualisation des exercices. Un correctif temporaire est en développement pour libérer périodiquement la mémoire, tandis qu'une solution permanente nécessite une refonte plus importante de l'architecture.",
                     ProductId = 3, // Planificateur d'Entraînement
                     VersionId = 5, // 2.0
                     OsId = 3,      // MacOS
@@ -287,7 +285,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 4, 20),
                     DateResolution = null,
                     Description = "Disparition aléatoire des données historiques d'entraînement sur certains appareils Android 13. Les utilisateurs perdent leur historique sans action spécifique de leur part.",
-                    Resolution = "Problème complexe en cours d'investigation. Les tests initiaux suggèrent une interaction problématique entre le système de stockage de l'application et le gestionnaire de stockage scoped d'Android 13. Une solution de contournement temporaire a été mise en place via une sauvegarde cloud automatique, mais la résolution définitive nécessite des modifications architecturales importantes.",
                     ProductId = 3, // Planificateur d'Entraînement
                     VersionId = 5, // 2.0
                     OsId = 4,      // Android
@@ -315,7 +312,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 2, 8),
                     DateResolution = null,
                     Description = "Les enregistrements audio des exercices de relaxation sont systématiquement corrompus après installation sur Windows 11. L'audio est saccadé et inintelligible.",
-                    Resolution = "Investigation en cours sur un conflit potentiel avec le nouveau codec audio de Windows 11. Tests en cours avec des formats audio alternatifs et différentes méthodes de lecture. Une version bêta avec solution temporaire est disponible pour les utilisateurs affectés, utilisant un moteur audio tiers au lieu des API système.",
                     ProductId = 4, // Planificateur d'Anxiété Sociale
                     VersionId = 1, // 1.0
                     OsId = 2,      // Windows
@@ -343,7 +339,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 3, 10),
                     DateResolution = null,
                     Description = "Vulnérabilité de sécurité critique : les journaux personnels des utilisateurs sont stockés en texte clair et accessibles sans authentification si l'on accède physiquement à l'appareil.",
-                    Resolution = "En cours de correction prioritaire. Développement d'un système de chiffrement transparent des données sensibles avec authentification biométrique ou par mot de passe. Migration des données existantes vers le nouveau format sécurisé. Un audit de sécurité externe a été commandé pour valider la solution avant déploiement.",
                     ProductId = 4, // Planificateur d'Anxiété Sociale
                     VersionId = 2, // 1.1
                     OsId = 3,      // MacOS
@@ -371,7 +366,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 1, 5),
                     DateResolution = null,
                     Description = "Problème de sécurité : les mots de passe sont stockés en clair dans un fichier de configuration accessible. Risque de compromission des comptes utilisateurs.",
-                    Resolution = "Analyse en cours. Solution planifiée pour implémenter un stockage sécurisé avec chiffrement AES-256. Mise en place d'un mécanisme de migration automatique des identifiants existants vers le nouveau système sécurisé. La correction est en phase finale de tests et sera déployée après l'audit de sécurité externe.",
                     ProductId = 1, // Trader en Herbe
                     VersionId = 1, // 1.0
                     OsId = 1,      // Linux
@@ -399,7 +393,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 3, 15),
                     DateResolution = null,
                     Description = "Les utilisateurs signalent l'apparition de publicités intrusives malgré l'achat de la version premium sans publicité. Les annonces apparaissent aléatoirement pendant les exercices de méditation.",
-                    Resolution = "Problème prioritaire en cours d'investigation. L'analyse préliminaire suggère un conflit avec la dernière mise à jour du framework publicitaire tiers. Une solution temporaire consiste à désactiver complètement le module publicitaire en attendant une correction permanente. L'équipe développe actuellement un correctif d'urgence qui sera déployé d'ici 7 jours.",
                     ProductId = 4, // Planificateur d'Anxiété Sociale
                     VersionId = 2, // 1.1
                     OsId = 5,      // iOS
@@ -427,7 +420,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 4, 12),
                     DateResolution = null,
                     Description = "Synchronisation défectueuse entre appareils : les modifications du portefeuille effectuées sur Android ne sont pas reflétées sur les autres plateformes (iOS, Web) malgré une connexion internet stable.",
-                    Resolution = "Investigation en cours. Les journaux serveur montrent des incohérences dans les jetons d'authentification entre plateformes, entraînant des rejets de synchronisation. L'équipe backend travaille sur une refonte du système de synchronisation multi-appareils avec un nouveau protocole de validation et résolution de conflits. Une version test est en cours de déploiement pour validation interne.",
                     ProductId = 2, // Maître des Investissements
                     VersionId = 6, // 2.1
                     OsId = 4,      // Android
@@ -441,7 +433,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 2, 7),
                     DateResolution = null,
                     Description = "Échec du démarrage de l'application sur les distributions Linux basées sur Fedora 39. L'application affiche un message d'erreur concernant des bibliothèques Qt incompatibles avant de se fermer.",
-                    Resolution = "Investigation en cours. Tests préliminaires indiquent une incompatibilité avec la nouvelle version de la bibliothèque Qt 6.6 incluse dans Fedora 39. L'équipe travaille sur deux approches parallèles : une solution de compatibilité pour Qt 6.6 et un package contenant toutes les dépendances nécessaires en version compatible, à distribuer avec l'application.",
                     ProductId = 1, // Trader en Herbe
                     VersionId = 2, // 1.1
                     OsId = 1,      // Linux
@@ -469,7 +460,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 3, 10),
                     DateResolution = null,
                     Description = "Faille de sécurité critique identifiée : l'intégration avec le navigateur web stocke temporairement les données des transactions dans un fichier non chiffré accessible par d'autres applications. Risque d'extraction de données sensibles par des logiciels malveillants.",
-                    Resolution = "Équipe de sécurité mobilisée en priorité. Développement d'un correctif d'urgence qui implémente un stockage temporaire en mémoire encryptée au lieu d'utiliser le système de fichiers. Audit de sécurité complet en cours sur toutes les fonctionnalités impliquant des données sensibles. Publication d'un avertissement de sécurité et recommandations temporaires aux utilisateurs en attendant le déploiement de la mise à jour.",
                     ProductId = 1, // Trader en Herbe
                     VersionId = 4, // 1.3
                     OsId = 2,      // Windows
@@ -511,7 +501,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 3, 17),
                     DateResolution = null,
                     Description = "Multiples erreurs d'affichage sur les configurations multi-écrans. Les fenêtres flottantes d'analyse apparaissent au mauvais endroit ou sont partiellement visibles lorsqu'elles sont déplacées entre écrans avec des résolutions différentes.",
-                    Resolution = "Investigation en cours sur les problèmes de gestion de fenêtres dans des configurations d'affichage complexes. Tests réalisés avec diverses combinaisons de résolutions et échelles DPI. Solution envisagée implique une refonte du système de positionnement des fenêtres avec détection et ajustement automatique aux caractéristiques de chaque écran. Développement d'un mode de test permettant de simuler diverses configurations d'affichage.",
                     ProductId = 2, // Maître des Investissements
                     VersionId = 6, // 2.1
                     OsId = 2,      // Windows
@@ -539,7 +528,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 2, 12),
                     DateResolution = null,
                     Description = "Consommation excessive de batterie en raison de l'utilisation continue du GPS même lorsque l'utilisateur n'est pas en activité. Certains utilisateurs rapportent jusqu'à 40% de batterie consommée en une journée par l'application en arrière-plan.",
-                    Resolution = "Analyse approfondie en cours du cycle de vie de l'application et de la gestion des capteurs. Développement d'un système intelligent de détection d'activité qui n'active le GPS que lorsque nécessaire. Implémentation d'un algorithme de prédiction qui anticipe les périodes d'entraînement basées sur les habitudes de l'utilisateur. Tests en cours avec diverses intensités d'utilisation pour mesurer l'impact des optimisations. Première version bêta du correctif disponible pour les testeurs volontaires.",
                     ProductId = 3, // Planificateur d'Entraînement
                     VersionId = 2, // 1.1
                     OsId = 4,      // Android
@@ -567,7 +555,6 @@ namespace Projet6.Data.Seed
                     DateCreation = new DateTime(2024, 4, 5),
                     DateResolution = null,
                     Description = "Disparition des données après restauration de l'appareil ou transfert vers un nouvel iPhone. La sauvegarde iCloud ne semble pas préserver correctement les journaux personnels et les statistiques d'évolution.",
-                    Resolution = "Investigation en cours sur l'implémentation de CloudKit. Identification préliminaire d'erreurs dans la structure des données stockées qui empêchent la restauration correcte. Développement d'un utilitaire de récupération qui peut extraire les données des sauvegardes iCloud même en cas de structure incompatible. Refonte du système de stockage cloud avec validation plus stricte des données avant synchronisation et mécanismes de récupération robustes. Beta planifiée pour la semaine prochaine avec les utilisateurs affectés.",
                     ProductId = 4, // Planificateur d'Anxiété Sociale
                     VersionId = 2, // 1.1
                     OsId = 5,      // iOS
