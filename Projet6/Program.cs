@@ -90,7 +90,7 @@ namespace Projet6
 
             // Retourner la première qui n'est pas nulle
             return connectionStrings.FirstOrDefault(cs => !string.IsNullOrEmpty(cs)) 
-                   ?? connectionStrings[0];
+                   ?? connectionStrings[0]!;
         }
 
         static string GetConnectionDisplayName(string connectionString)
