@@ -492,3 +492,8 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ## 📞 Support
 
 - 🐛 **Issues** : [GitHub Issues](../../issues)
+<<<<<<< HEAD
+=======
+
+---
+>>>>>>> 9c3ff855c1344e06c894f0c3335286e2f0964988
