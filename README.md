@@ -492,15 +492,3 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ## 📞 Support
 
 - 🐛 **Issues** : [GitHub Issues](../../issues)
-- 📧 **Email** : support@nexawork.com
-- 📖 **Documentation** : [Wiki du projet](../../wiki)
-
----
-
-<div align="center">
-
-**⭐ Si ce projet vous aide, n'hésitez pas à lui donner une étoile ! ⭐**
-
-Développé avec ❤️ par l'équipe NexaWork
-
-</div>
